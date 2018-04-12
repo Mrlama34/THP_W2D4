@@ -3,7 +3,7 @@ require 'nokogiri'
 require 'open-uri'
 require 'pry'
 
-def trader_de_lombre
+def trader_de_lobscur
 i=0
     until i == 1800
         puts "Voici le cours de toutes les cyptomonnaies de la blockchienne ;) refresh toutes les heures !"
@@ -39,4 +39,4 @@ end
 end 
 
 
-trader_de_lombre
+trader_de_lobscur

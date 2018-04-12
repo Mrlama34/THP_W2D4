@@ -2,7 +2,7 @@ require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 
-def incubateurs_list
+def route_des_incubateurs
 
 pages = Nokogiri::HTML(open("http://www.alloweb.org/annuaire-startups/annuaire-incubateurs-startups"))
 news_links = pages.css("a.listing-row-image-link")
@@ -17,5 +17,5 @@ news_links = pages.css("a.listing-row-image-link")
  
 end
 
-incubateurs_list
+route_des_incubateurs
 

@@ -3,7 +3,7 @@ require 'nokogiri'
 require 'open-uri'
 
 
-def get_all_the_urls_of_val_doise_townhalls
+def route_de_la_mairie
 liste = Hash.new
 pages = Nokogiri::HTML(open("http://annuaire-des-mairies.com/val-d-oise.html"))
 
@@ -18,4 +18,4 @@ puts liste
 				}
 
 end
-get_all_the_urls_of_val_doise_townhalls
+route_de_la_mairie
